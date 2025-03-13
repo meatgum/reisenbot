@@ -1,0 +1,14 @@
+name = "discord-anonymous-bot"
+main = "worker.js"
+compatibility_date = "2023-05-18"
+node_compat = true
+
+# Set up a scheduled trigger to run your bot
+[triggers]
+crons = ["*/5 * * * *"]  # Run every 5 minutes
+
+# Define your environment variables
+[vars]
+DISCORD_BOT_TOKEN = "your_token_here"  # Replace in the dashboard for security
+STAFF_CHANNEL_ID = "your_staff_channel_id"
+STAFF_ROLE_ID = "your_staff_role_id"
