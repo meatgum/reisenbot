@@ -1,17 +1,13 @@
 {
-    "name": "discord-qna-bot",
-    "version": "1.0.0",
-    "description": "A Discord Q&A bot for anonymous questions.",
-    "main": "index.js",
-    "scripts": {
-      "start": "node index.js"
-    },
-    "dependencies": {
-      "discord.js": "^14.7.1",
-      "dotenv": "^16.0.3"
-    },
-    "engines": {
-      "node": "18.x"
-    }
+  "name": "discord-anonymous-bot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "worker.js",
+  "dependencies": {
+    "discord.js": "^14.11.0"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
   }
-  
+}
